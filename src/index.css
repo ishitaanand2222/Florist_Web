@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+.anim{
+  display: flex;
+  align-items:center;
+  justify-content:right;
+  min-height: 100vh;
+}
+.wrapper{
+   display: inline-flex; 
+}
+.wrapper .static-txt{
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
+}
+.wrapper .dynamic-txt{
+margin-left: 15px;
+line-height: 90px;
+height: 90px;
+overflow: hidden;
+}
+.dynamic-txt li{
+  color:#fff;
+  list-style:none;
+  font-size: 20px;
+  font-weight: 200;
+  position: relative;
+  top:0;
+  animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+100%{
+  top:-360px;
+}
+}
+.dynamic-txt li span{
+  position: relative;
+}
+.dynamic-txt li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid white;
+  animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+  }
+/* body{ 
+  background-image:url("images/flower_background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 56px;
+  background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+} */
+.yo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  font-family:  'Amatic SC', cursive;
+  /* font-weight: 500; */
+  font-weight: bolder;
+  /* font-size: xx-large; */
+  color:black;
+  /* text-decoration: underline; */
+  margin-left: 80px;
+}
+.spanji{
+  font-family:  'Amatic SC', cursive;
+}
+/* .us{
+  text-shadow: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+} */
+.sty{
+  border-radius: 30px;
+  box-shadow: 0.5px 0.5px 0.5px black;
+  margin-left: 80px;
+}
+.para{
+ margin-left: 80px;
+}
+.para1{
+  font-family:cursive;
+  margin-top: 0;
+}
+.para2{
+  font-family:cursive;
+  margin-top: 0;
+}
+.logo_head{
+  font-family: 'Ephesis', cursive;
+  font-weight: 800;
+  overflow: hidden;
+}
+.headd{
+  justify-content: left;
+  align-items: center;
+}
+.upper_head{
+  margin-top: 8px;
+  text-align: right;
+  margin-right: 50px;
+  font-family:sans-serif;
+  overflow: hidden;
+  color:#ff0090;
+  /* color:#f64a8a; */
+}
+body{ 
+  background-image:url("images/flower_background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+     
+}
+.nav{
+  /* overflow: hidden; */
+  margin-top: -5px;
+}
+.cate{
+  font-family: 'Ephesis', cursive;
+  font-weight: 800;
+  color: black;
+}
+.card{
+  margin-top: 65px;
+  margin-left: 100px;
+  flex-direction: column;
+  display: inline-flex;
+  box-shadow: 5px 8px 20px black;
+}
+.card-about{
+  margin-top: 50px;
+  border-radius: 50px;
+  background-color:lightpink;
+  margin-left: 80px;
+  margin-right: 50px;
+  height: 300px;
+  width: 200px;
+  box-shadow: 5px 8px 20px black;
+}
+.card-img-top{
+  height: 287px;
+  width: 287px;
+}
+
+.card-img-top-about{
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+}
+.card-text{
+  font-family:  'Ephesis', cursive;
+  font-weight: 800;
+  font-size: medium;
+}
+.card-title{
+  font-family: 'Ephesis', cursive;
+  text-decoration: underline;
+  font-size: xx-large;
+
+}
+.btncard{
+  border-radius: 50px;
+  box-shadow: 2px 2px 15px gray;
+}
+.about_head{
+  font-family: 'Amatic SC', cursive;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-left: 80px;
+  justify-content: left;
+}
+.about_subhead{
+  font-family:  'Ephesis', cursive;
+  font-weight: 800;
+  color: black;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form-ji{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 80px;
+  display: block;
+  width: 500px;
+  height: 450px;
+  justify-content: center;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 50px;
+}
+.form-label{
+  margin-left: 20px;
+  font-family: 'Ephesis', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.form-text{
+  font-family: 'Ephesis', cursive;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+ 
